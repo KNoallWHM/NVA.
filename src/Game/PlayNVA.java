@@ -49,6 +49,7 @@ public class PlayNVA {
                 System.out.println("Okay alien, choose your weapon [claw/laser]");
             }
             weapon = scanner.nextLine();
+
             if (playerType.equalsIgnoreCase("ninja") && weapon.equalsIgnoreCase("blade")) {
                 System.out.println("The ninja blade is close range, but deals more damage.");
             } else if (playerType.equalsIgnoreCase("ninja") && weapon.equalsIgnoreCase("star")) {
@@ -60,47 +61,46 @@ public class PlayNVA {
             } else {
                 System.out.println("Invalid weapon.");
             }
-        }
 
-        String location = "";
-        while (!(location.equalsIgnoreCase("forest") || playerType.equalsIgnoreCase("space"))) {
+            String location = "";
+            while (!(location.equalsIgnoreCase("forest") || playerType.equalsIgnoreCase("space"))) {
 
+                System.out.println("Are you in? [space/forest]");
+                location = scanner.nextLine();
 
-            System.out.println("Are you in? [space/forest]");
-            location = scanner.nextLine();
-            if (location.equalsIgnoreCase("forest")) {
-                System.out.println("the forest gives the ninja a slight stealth advantage.");
-            } else if (location.equalsIgnoreCase("space")) {
-                System.out.println("Space gives the alien a slight strength advantage");
-            } else {
-                System.out.println("invalid location");
+                if (location.equalsIgnoreCase("forest")) {
+                    System.out.println("the forest gives the ninja a slight stealth advantage.");
+                } else if (location.equalsIgnoreCase("space")) {
+                    System.out.println("Space gives the alien a slight strength advantage");
+                } else {
+                    System.out.println("invalid location");
 
+                }
             }
-        }
 
 
-        String special = "";
-        while (!(special.equalsIgnoreCase("speed") || special.equalsIgnoreCase("power") || special.equalsIgnoreCase("pain"))) {
-            System.out.println("Choose your special attack [speed/power/pain]");
-            special = scanner.nextLine();
+            String special = "";
+            while (!(special.equalsIgnoreCase("speed") || special.equalsIgnoreCase("power") || special.equalsIgnoreCase("pain"))) {
+                System.out.println("Choose your special attack [speed/power/pain]");
+                special = scanner.nextLine();
 
 
-            if (special.equalsIgnoreCase("speed")) {
-                System.out.println("Speed gives the the player a high chance of making a second hit at 20% damage of the first hit.");
-            } else if (special.equalsIgnoreCase("power")) {
-                System.out.println(" Power gives the the player a medium chance of doing an additional 50% damage on a hit.");
-            } else if (special.equalsIgnoreCase("pain")) {
-                System.out.println("Pain has a small change of inflicting a permanent penalty on the opponent, decreasing their overall effectiveness by 10%.");
-            } else {
-                System.out.println("Invalid special");
+                if (special.equalsIgnoreCase("speed")) {
+                    System.out.println("Speed gives the the player a high chance of making a second hit at 20% damage of the first hit.");
+                } else if (special.equalsIgnoreCase("power")) {
+                    System.out.println(" Power gives the the player a medium chance of doing an additional 50% damage on a hit.");
+                } else if (special.equalsIgnoreCase("pain")) {
+                    System.out.println("Pain has a small change of inflicting a permanent penalty on the opponent, decreasing their overall effectiveness by 10%.");
+                } else {
+                    System.out.println("Invalid special");
 
+                }
             }
-        }
 
+
+        }
 
     }
-
-
 }
 
 

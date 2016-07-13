@@ -20,7 +20,7 @@ public class PlayNVA {
 
         System.out.println("Welcome, " + name);
 
-//        System.out.println("Are you a Ninja or Alien? [ninja/alien]");
+
         String playerType = "";
 
 
@@ -37,30 +37,10 @@ public class PlayNVA {
                 System.out.println("Invalid player type.");
             }
         }
-        //if (playerType.equalsIgnoreCase("ninja")) {
-
-//            System.out.println("Okay ninja, choose your weapon [blade/star]");
-//        } else if (playerType.equalsIgnoreCase("alien")) {
-//            System.out.println("Okay alien, choose your weapon [claw/laser]");
-//        } else {
-//            System.out.println("invalid player type");
 
 
-        // }
-
-        //String weapon = scanner.nextLine();
         String weapon = "";
-//        if (playerType.equalsIgnoreCase("ninja") && weapon.equalsIgnoreCase("blade")) {
-//            System.out.println("the ninja blade is close range, but deals more damage");
-//        } else if (playerType.equalsIgnoreCase("ninja") && weapon.equalsIgnoreCase("star")) {
-//            System.out.println("The ninja star does less damage, but keeps you at a safer range");
-//        } else if (playerType.equalsIgnoreCase("alien") && weapon.equalsIgnoreCase("claw")) {
-//            System.out.println("The alien claw is close range, but deals more damage");
-//        } else if (playerType.equalsIgnoreCase("alien") && weapon.equalsIgnoreCase("laser")) {
-//            System.out.println("the alien laser does less damage, but keeps you at a safer range.");
-//        } else {
-//            System.out.println("Invalid weapon.");
-        // }
+
 
         while (!((playerType.equalsIgnoreCase("ninja") && ((weapon.equalsIgnoreCase("blade")) || (weapon.equalsIgnoreCase("star"))))) || ((playerType.equalsIgnoreCase("alien") && ((weapon.equalsIgnoreCase("claw")) || (weapon.equalsIgnoreCase("laser")))))) {
             if (playerType.equals("ninja")) {
@@ -81,7 +61,7 @@ public class PlayNVA {
                 System.out.println("Invalid weapon.");
             }
         }
-        // System.out.println("Choose your location? [forest/space]");
+
         String location = "";
         while (!(location.equalsIgnoreCase("forest") || playerType.equalsIgnoreCase("space"))) {
 

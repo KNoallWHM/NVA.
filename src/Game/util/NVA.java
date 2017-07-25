@@ -139,7 +139,7 @@ public class NVA {
         }
         System.out.println(" ");
         System.out.println(" ");
-        System.out.println("Time to play!");
+        System.out.println("Let's go to War!");
         System.out.println(" ");
 
 
@@ -169,22 +169,22 @@ public class NVA {
 
             System.out.println("");
             if (ninja.getHealth() >= 0) {
-                System.out.println(ninja.getPlayerName() + " ninja Wins!!!");
+                System.out.println(ninja.getPlayerName() + " The Great White Ninja Wins!!!");
                 System.out.println("Health Remaining: " + ninja.getPlayerName());
             } else if (alien.getHealth() >= 0) {
-                System.out.println(alien.getPlayerName() + "alien Wins!!!");
+                System.out.println(alien.getPlayerName() + " The Alien Wins!!!");
                 System.out.println("Health Remaining: " + alien.getPlayerName());
             } else {
                 System.out.println("Everyone Died!!!");
                 System.out.println(ninja.getPlayerName() + " and " + alien.getPlayerName() + " both lose.");
             }
             System.out.println("*********");
-            System.out.println("Total attacks" +stats.getTotalAttacks());
-            System.out.println("Total ties" +stats.getTies());
-            System.out.println("ninja's average attack" +stats.getNinjaAverageDamageDealt());
-            System.out.println("Total wins by ninja" +stats.getNinjaWins());
-            System.out.println("alien's average attack" +stats.getAlienAverageDamageDealt());
-            System.out.println("Total wins by alien" +stats.getAlienWins());
+            System.out.println("Total attacks: " +stats.getTotalAttacks());
+            System.out.println("Total ties: " +stats.getTies());
+            System.out.println("ninja's average attack: " +stats.getNinjaAverageDamageDealt());
+            System.out.println("Total wins by ninja: " +stats.getNinjaWins());
+            System.out.println("alien's average attack: " +stats.getAlienAverageDamageDealt());
+            System.out.println("Total wins by alien: " +stats.getAlienWins());
         }
 
 
